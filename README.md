@@ -62,7 +62,7 @@ $$
 ## Current Status
 
 ### Working Correctly
-*   **N-Body Gravity**: All bodies attract all other bodies ($O(N^2)$).
+*   **N-Body Gravity**: All bodies attract all other bodies $O(N^2)$.
 *   **Orbital Stability**: RK4 maintains stable orbits for long durations under normal time scales.
 *   **Precession**: Relativistic apsidal precession is observable for close, fast orbits.
 *   **Lagrange Points**: L1-L5 are correctly visualized relative to the largest planet.

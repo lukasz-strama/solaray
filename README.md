@@ -46,7 +46,11 @@ If $d < d_{limit}$, the body explodes into smaller fragments.
 ### 5. Accretion Disk Drag
 A simplified drag model simulates gas/dust density near the central body.
 *   **Density Profile**: Linear gradient decreasing from $R_{in}$ to $R_{out}$.
-*   **Drag Force**: $\vec{F}_{drag} = -C_{drag} \cdot \rho(r) \cdot \vec{v}$
+*   **Drag Force**:
+
+$$
+\vec{F}_{drag} = -C_{drag} \cdot \rho(r) \cdot \vec{v}
+$$
 
 ## Assumptions & Simplifications
 

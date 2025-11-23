@@ -10,13 +10,14 @@ Educational project designed to explore numerical integration methods and astrop
 The simulation uses the **Runge-Kutta 4th Order (RK4)** method for solving the differential equations of motion. This provides significantly higher stability and accuracy compared to Euler or Verlet integration, especially for eccentric orbits.
 
 Given state $y$ (position and velocity) and derivative function $f(t, y)$:
+
 $$
 \begin{aligned}
-k_1 &= f(t_n, y_n) \\
-k_2 &= f(t_n + \frac{h}{2}, y_n + h \frac{k_1}{2}) \\
-k_3 &= f(t_n + \frac{h}{2}, y_n + h \frac{k_2}{2}) \\
-k_4 &= f(t_n + h, y_n + h k_3) \\
-y_{n+1} &= y_n + \frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)
+    k_1 &= f(t_n, y_n) \\
+    k_2 &= f\left(t_n + \frac{h}{2}, y_n + h \frac{k_1}{2}\right) \\
+    k_3 &= f\left(t_n + \frac{h}{2}, y_n + h \frac{k_2}{2}\right) \\
+    k_4 &= f\left(t_n + h, y_n + h k_3\right) \\
+    y_{n+1} &= y_n + \frac{h}{6}\left(k_1 + 2k_2 + 2k_3 + k_4\right)
 \end{aligned}
 $$
 
